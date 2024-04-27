@@ -37,10 +37,6 @@ To run the frontend locally, follow these steps:
 3. Start the development server using `npm start`.
 4. The application will open in your default web browser at `http://localhost:3000`.
 
-## Deployment
-
-The frontend is deployed and can be accessed at [Etite Event Management Platform](https://etite-events-management-platform.netlify.app).
-
 ## Technologies Used
 
 - ReactJS
@@ -56,3 +52,9 @@ The frontend is deployed and can be accessed at [Etite Event Management Platform
     <tr><td>Password:</td><td>P@ssword2024</td></tr>
 </table>
  
+## Demo Images
+![Dashboard](https://raw.githubusercontent.com/ProgrammerDATCH/images/main/AdminLogin.png)
+![Dashboard](https://raw.githubusercontent.com/ProgrammerDATCH/images/main/AdminLogin-credentials.png)
+![Dashboard](https://raw.githubusercontent.com/ProgrammerDATCH/images/main/Dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/ProgrammerDATCH/images/main/bookEventTickets.png)
+![Dashboard](https://raw.githubusercontent.com/ProgrammerDATCH/images/main/userReceiveEmail.png)

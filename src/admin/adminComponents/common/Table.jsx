@@ -2,7 +2,7 @@ import React from 'react';
 import { FaSpinner } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
-const Table = ({ data, handleDelete, isDoing }) => {
+const Table = ({ data, handleDelete, isDoing, isFromEvents = false }) => {
   const navigate = useNavigate();
 
   if (!data || data.length === 0) {
@@ -31,9 +31,9 @@ const Table = ({ data, handleDelete, isDoing }) => {
                   {header}
                 </th>
               ))}
-              <th className="px-6 py-3 bg-gray-50 dark:bg-gray-800 text-center text-lg leading-4 font-medium text-gray-500 dark:text-gray-400  tracking-wider">
+             {isFromEvents && <th className="px-6 py-3 bg-gray-50 dark:bg-gray-800 text-center text-lg leading-4 font-medium text-gray-500 dark:text-gray-400  tracking-wider">
                 Actions
-              </th>
+              </th>}
             </tr>
           </thead>
           <tbody className="divide-y-6 dark:divide-boxdark divide-white">
@@ -48,11 +48,11 @@ const Table = ({ data, handleDelete, isDoing }) => {
                     )}
                   </td>
                 ))}
-                <td className="px-6 py-4 whitespace-nowrap text-sm leading-5 text-gray-900 dark:text-gray-100">
+                {isFromEvents && <td className="px-6 py-4 whitespace-nowrap text-sm leading-5 text-gray-900 dark:text-gray-100">
                   <button onClick={() => navigate(`/admin/tickets/${row["_id"]}`)} className="px-4 py-2 bg-green-500 text-white rounded-md mr-2">View Tickets</button>
                   <button onClick={() => handleUpdate(row["_id"])} className="px-4 py-2 bg-blue-500 text-white rounded-md mr-2">Update</button>
                   <button onClick={() => handleDelete(row["_id"])} className="px-4 py-2 bg-red-500 text-white rounded-md">Delete</button>
-                </td>
+                </td>}
               </tr>
             ))}
           </tbody>

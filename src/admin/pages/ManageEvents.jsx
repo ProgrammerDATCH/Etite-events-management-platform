@@ -133,7 +133,7 @@ export const ManageEvents = () => {
 
       {<div className={`${commonStyleClasses(null, null, null).adminDiv} mt-5 bg-white`}>
         <p className='my-4 shadow-md shadow-white p-3 rounded-md text-xl'>View Event Tickets, Edit & Delete</p>
-        {loading ? <LoadingAPI name="Event" /> : allEvents && <Table data={allEvents} handleDelete={handleDelete} isDoing={isDoing} />}
+        {loading ? <LoadingAPI name="Event" /> : allEvents && <Table data={allEvents} handleDelete={handleDelete} isDoing={isDoing} isFromEvents />}
       </div>}
     </>
   );
