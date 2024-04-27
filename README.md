@@ -2,9 +2,16 @@
 
 This frontend is for the Etite Event Management Platform.
 
+## Hosted on:
+- FrontEnd: [https://etite-events-management-system.netlify.app/](https://etite-events-management-system.netlify.app/)
+
+- BackEnd: [https://etite-event-management-platform-backend.onrender.com/](https://etite-event-management-platform-backend.onrender.com/)
+
+- Github for Backend Source code: [https://github.com/ProgrammerDATCH/Etite-event-management-platform-BackEnd](https://github.com/ProgrammerDATCH/Etite-event-management-platform-BackEnd)
+
 ## Description
 
-The frontend is hosted on Netlify at [Etite Event Management Platform](https://etite-events-management-platform.netlify.app) and was made using ReactJS and Tailwind CSS.
+The frontend is hosted on Netlify at [Etite Event Management Platform](https://etite-events-management-system.netlify.app/) and was made using ReactJS and Tailwind CSS.
 
 ## Features for User
 
@@ -40,3 +47,12 @@ The frontend is deployed and can be accessed at [Etite Event Management Platform
 - Tailwind CSS
 - Axios (for API requests)
 - React Router (for routing)
+
+## Usage
+- Admin Dashboard: [https://etite-events-management-system.netlify.app/admin](https://etite-events-management-system.netlify.app/)
+<br>Admin Credentials
+<table>
+    <tr><td>Email:</td><td>admin@gmail.com</td></tr>
+    <tr><td>Password:</td><td>P@ssword2024</td></tr>
+</table>
+ 
